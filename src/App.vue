@@ -1,32 +1,39 @@
 <script>
 
 import AppHeader from './components/AppHeader.vue';
+import AppFirstSection from './components/AppFirstSection.vue';
+import AppSecondSection from './components/AppSecondSection.vue';
+import AppFooter from './components/AppFooter.vue';
+
 
 
 export default {
   data() {
     return { 
-      count: 0 
+      
     }
   },
   components: {
-    AppHeader
+    AppHeader,
+	AppFirstSection,
+	AppSecondSection,
+	AppFooter
   },
   methods: {
-    incrementCount() {
-      this.count++;
-    }
+    
   }
 }
 </script>
 
 <template>
-  <div>
-    <AppHeader />
-    <button @click="incrementCount()">
-      {{ count }}
-    </button>
-  </div>
+  
+  <AppHeader />
+    
+  <AppFirstSection />
+
+  <AppSecondSection />
+
+  <AppFooter />
 </template>
 
 <style scoped>
