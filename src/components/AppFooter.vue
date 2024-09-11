@@ -29,10 +29,7 @@ export default {
 				url: '#',
 				logoTitle: 'periscope'
 				}
-				
-				
-				
-				
+			
 				
 			]
 		}
@@ -44,9 +41,9 @@ export default {
 	<footer>
 		<div class="footer-container">
 			<div >
-				<button>
+				<button class="my-btn">
 					<a href="#">
-						Sign-up here
+						Sign-up now!
 					</a>
 				</button>
 			</div>
@@ -81,6 +78,16 @@ footer {
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 10px;
+		.my-btn {
+			background-color: #303030;
+			border: 1px solid #0282F9;
+			padding: 10px;
+			> a {
+				text-decoration: none;
+				color: white;
+				text-transform: uppercase;
+			}
+		}
 		nav {
 			ul {
 				display: flex;
@@ -94,10 +101,10 @@ footer {
 					color: #56566F;
 
 					&:hover {
-						color: #0282F9;
-					}
+						background-color: #0282F9;
+						}
 					
-				}
+					}
 				} 
 				
 			}
